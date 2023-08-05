@@ -1,5 +1,243 @@
+div {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
 .homeRoot {
-    width: 100vw;
-    height: 100vh;
-    
+  width: 100vw;
+  max-width: 1440px !important;
+  height: 100vh;
+  color: azure;
+  display: flex;
+}
+
+.bodyHeader {
+  height: 100vh;
+  width: 260px;
+  min-width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profilePic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 3px solid #26216199;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.profilePic:hover {
+  cursor: pointer;
+  width: 170px;
+  height: 170px;
+}
+
+.contactsDiv {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  row-gap: 16px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.contactsDiv > img {
+  width: 30px;
+}
+
+.contactsDiv > span {
+  display: flex;
+  align-items: center;
+}
+
+.contactsDiv > *:hover {
+  cursor: pointer;
+}
+
+.bodyMain {
+  color: azure !important;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 20px;
+}
+
+.swipableBody {
+  /* padding: 0 10px; */
+  width: 100%;
+  height: 100%;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.swipableDiv * {
+    background: transparent !important;
+    color: azure !important;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background: #262161 !important;
+  padding: 5px 0;
+  border-radius: 10px;
+  height: 70px;
+}
+
+
+.icon > img {
+  margin-bottom: 5px;
+  width: 35px;
+  transition: all 0.15s ease-in-out;
+
+}
+
+.icon:hover > img {
+  width: 40px;
+}
+
+.skillIconContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  row-gap: 21px;
+  padding: 0 30px;
+}
+
+.carouselRoot,
+.carousel-inner,
+.carousel,
+.myItem {
+  height: 100% !important;
+}
+
+.project > img {
+  height: calc(100% - 4rem);
+  width: 100%;
+  object-fit: cover;
+}
+.project {
+  background: #262161;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+}
+
+.project:hover > h6 {
+  color: #faae41 !important;
+}
+
+.projectContainer {
+  padding: 0 50px;
+  display: grid;
+  column-gap: 21px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectContainer * {
+  text-decoration: none;
+  color: azure;
+}
+
+.title1 {
+  text-align: center;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.title2 {
+  text-align: center;
+  margin-top: 16px !important;
+  margin-bottom: 10px !important;
+}
+
+.workContainer {
+  background: #26216177;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  
+}
+
+.responsibility {
+  margin: 0;
+  text-align: center;
+}
+
+.responsibility::after,
+.responsibility::before {
+  content: '\2022';
+  margin: 10px;
+}
+
+hr {
+  margin: 5px !important;
+}
+
+.infoContainer * {
+  margin: 0 !important;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  background: #26216177;
+  margin: 0 auto;
+  column-gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.infoContainer > p:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.creditContainer,
+.educationContainer {
+  background: #26216177;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerBody {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
