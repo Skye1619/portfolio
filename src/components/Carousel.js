@@ -144,7 +144,7 @@ function Carousel() {
                   </Typography>
                 </div>
               </a>
-              <a href="https://capstone-psi-six.vercel.app/" target="_blank">
+              <a href="https://capstone-9cmocnl2f-skye1619.vercel.app/home" target="_blank">
                 <div className="project">
                   <img src={capstone} alt="Capstone Project" />
                   <Typography

@@ -42,7 +42,7 @@ function Home() {
             height: "170px",
           }}
         >
-          <img src={myPic} alt="Profile Picture" className="profilePic" />
+          <img src={myPic} alt="Profile Pic" className="profilePic" />
         </div>
         <Typography variant="h6" sx={{ marginTop: "12px", color: "#faae41" }}>
           Johnskyle G. Sebastian
